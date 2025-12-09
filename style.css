@@ -1,0 +1,238 @@
+/* GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f5faff;
+    color: #0a0f24;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* HEADER */
+header {
+    position: fixed;
+    width: 100%;
+    padding: 18px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0a0f24;
+    z-index: 1000;
+}
+
+.logo {
+    color: #00c8ff;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s ease;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #00c8ff;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+    background: linear-gradient(135deg, rgba(10,15,36,0.8), rgba(0,0,0,0.8)),
+                url("images/bg-hero.jpg") center/cover no-repeat;
+    color: white;
+}
+
+.hero-left img {
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+    border: 5px solid #00c8ff;
+    object-fit: cover;
+}
+
+.hero-right h1 {
+    font-size: 40px;
+}
+
+.hero-right p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* Typing animation */
+.typing-name {
+    color: #00c8ff;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid #00c8ff;
+    animation: typing 3s steps(12), blink 0.7s infinite;
+}
+
+.cursor {
+    color: #00c8ff;
+    font-size: 40px;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 170px; }
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+.btn {
+    background: #00c8ff;
+    padding: 12px 25px;
+    border-radius: 8px;
+    color: #0a0f24;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 25px;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background: #fff;
+}
+
+/* Social Icons */
+.social-icons a {
+    color: #00c8ff;
+    font-size: 26px;
+    margin-right: 10px;
+}
+
+/* ABOUT */
+.about {
+    padding: 90px 10%;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 32px;
+}
+
+/* SKILLS */
+.skills {
+    padding: 90px 10%;
+}
+
+.skill-box {
+    max-width: 700px;
+    margin: auto;
+}
+
+.progress {
+    height: 10px;
+    background: #d9e2f2;
+    border-radius: 20px;
+}
+
+.progress div {
+    height: 100%;
+    background: #00c8ff;
+    border-radius: 20px;
+}
+
+/* PORTFOLIO */
+.portfolio {
+    padding: 90px 10%;
+}
+
+.portfolio-gallery {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.portfolio-item {
+    background: white;
+    border-radius: 12px;
+    padding: 12px;
+    text-align: center;
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* VIDEO */
+.video {
+    padding: 90px 10%;
+    text-align: center;
+}
+
+.video video {
+    width: 80%;
+    border-radius: 10px;
+}
+
+/* SERVICES */
+.services {
+    padding: 90px 10%;
+}
+
+.service-box {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.box {
+    background: #e8f6ff;
+    padding: 25px;
+    width: 280px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.service-icon {
+    font-size: 40px;
+    color: #00c8ff;
+}
+
+/* CONTACT */
+.contact {
+    padding: 90px 10%;
+    text-align: center;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+}
+
+/* FOOTER */
+footer {
+    padding: 15px;
+    text-align: center;
+    background: #0a0f24;
+    color: #fff;
+}
